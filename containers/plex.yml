@@ -161,7 +161,7 @@
         image: 'plexinc/pms-docker:{{extension.stdout}}'
         pull: yes
         published_ports:
-          - '127.0.0.0.1:32400:32400'
+          - '127.0.0.0.1:32400:443'
           - '3005:3005/tcp'
           - '8324:8324/tcp'
           - '32469:32469/tcp'
