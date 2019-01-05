@@ -43,9 +43,12 @@
     - name: 'Set Default Labels'
       set_fact:
         default_labels:
+          traefik.frontend.auth.forward.address: '{{gauth}}'
+          traefik.protocol: 'https'
           traefik.enable: 'true'
-          traefik.port: '{{intport}}'
-          traefik.frontend.rule: 'Host:{{pgrole}}.{{domain.stdout}},{{tldset}}'
+          traefik.https.port: '443'
+          traefik.https.frontend.entryPoints: 'https'
+          traefik.https.frontend.rule: 'Host:{{pgrole}}.{{domain.stdout}},{{tldset}}'
 
     - name: 'Set Default Volume - {{extension.stdout}}'
       set_fact:
@@ -158,7 +161,7 @@
         image: 'plexinc/pms-docker:{{extension.stdout}}'
         pull: yes
         published_ports:
-          - '32400:32400/tcp'
+          - '127.0.0.0.1:32400:32400'
           - '3005:3005/tcp'
           - '8324:8324/tcp'
           - '32469:32469/tcp'
