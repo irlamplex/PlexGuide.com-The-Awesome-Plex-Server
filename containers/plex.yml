@@ -46,7 +46,7 @@
           traefik.frontend.auth.forward.address: '{{gauth}}'
           traefik.protocol: 'https'
           traefik.enable: 'true'
-          traefik.https.port: '443'
+          traefik.https.port: '32400'
           traefik.https.frontend.entryPoints: 'https'
           traefik.https.frontend.rule: 'Host:{{pgrole}}.{{domain.stdout}},{{tldset}}'
 
@@ -161,10 +161,11 @@
         image: 'plexinc/pms-docker:{{extension.stdout}}'
         pull: yes
         published_ports:
-          - '127.0.0.0.1:32400:443'
+          - '32400:32400/tcp'
           - '3005:3005/tcp'
           - '8324:8324/tcp'
           - '32469:32469/tcp'
+          - '1900:1900/udp'
           - '32410:32410/udp'
           - '32412:32412/udp'
           - '32413:32413/udp'
