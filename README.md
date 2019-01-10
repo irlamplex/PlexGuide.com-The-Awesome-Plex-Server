@@ -8,7 +8,7 @@
   <a href="https://plexguide.com/threads/plexguide-install-instructions.243/" target="_blank"><img src="https://plexguide.com/wikipics/logo-pg-install.png" width="160"/>
   <a href="https://plexguide.com/account/upgrades" target="_blank"><img src="https://plexguide.com/wikipics/logo-donate.png" width="160"/>
 </p> 
-
+ 
 _**Table of Contents**_
 
 1. [General Intro](#1-general-intro)
@@ -16,7 +16,7 @@ _**Table of Contents**_
 3. [Functional Use](#3-functional-use)
 4. [Testimonials](#4-testimonials)
 5. [Conclusion](#5-conclusion)
-
+ 
 ----
 # 1. General Intro
 <p align="center"><kbd><img src="https://plexguide.com/wikipics/pglogo-move.gif" width="600""></kbd></p>
