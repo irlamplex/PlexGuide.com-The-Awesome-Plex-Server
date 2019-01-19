@@ -211,8 +211,8 @@ elif [ "$typed" == "2" ]; then
 elif [ "$typed" == "4" ]; then
   bash /opt/plexguide/menu/pgbox/pgboxselect.sh
 elif [ "$typed" == "5" ]; then
-  bash /opt/plexguide/menu/pgpress/pgpress.sh
-  bash /opt/pgpress/pressmain.sh
+  bash /opt/plexguide/menu/pgapache/pgapache.sh
+  bash /opt/pgapache/apachemain.sh
 elif [ "$typed" == "6" ]; then
   bash /opt/plexguide/menu/pgvault/pgvault.sh
 elif [ "$typed" == "7" ]; then
